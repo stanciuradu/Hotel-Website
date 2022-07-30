@@ -1,0 +1,86 @@
+<!-- cod pentru pagina de about -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <title>Hotel BT | Contact</title>
+  </head>
+  <body>
+    <header>
+      <!-- ca si good practice foloseste daor un id si restul clase -->
+      <nav id="navbar">
+        <h1 class="logo"><a href="index.html"></a>HBT</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- sectiune pentru form -->
+    <section id="contact-form">
+      <div class="container">
+        <h1 class="heading-form">
+          <span class="text-primary">Contact</span> Us
+        </h1>
+        <p>Please complete this form below to contact us</p>
+        <form class="form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- sectiune de contact -->
+    <section id="contact-info">
+      <div class="container">
+        <div class="box">
+          <!-- iconita pentru hotel -->
+          <i class="fas fa-hotel fa-3x"></i>
+          <h3>Location</h3>
+          <p>
+            Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-phone fa-3x"></i>
+          <h3>Phone Number</h3>
+          <p>
+           (617) 023-431
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-envelope fa-3x"></i>
+          <h3>Email Address</h3>
+          <p>
+            frontdesk@hoteBT.com
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="clear"></div>
+    <!-- footer(partea de subsol a site-ului web) -->
+    <div class="clear"></div>
+    <footer id="main-footer">
+      <p>Hotel BT &copy; 2022, All right Reserved</p>
+    </footer>
+  </body>
+</html>

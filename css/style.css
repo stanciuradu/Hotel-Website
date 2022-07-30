@@ -1,0 +1,426 @@
+/* Reset CSS-practic elimin toate spatiile din pagina web */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Main styling */
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Navbar */
+#navbar {
+  background-color: #333;
+  color: #fff;
+  overflow: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar a {
+  color: #fff;
+}
+
+#navbar li {
+  list-style-type: none;
+  margin-right: 2em;
+  padding: 20px;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+/* efect de hover la click cu mouse-ul */
+#navbar ul li a:hover {
+  background: #444;
+  color: #f7c08a;
+}
+
+/* stilizare contetn banner */
+.showcase .container .showcase-content .text-primary {
+  color: orange;
+}
+
+.showcase .container .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+/* introduc imaginea de fundal a continutului bannerului */
+.showcase {
+  background-image: url("../img/showcase.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+}
+
+/* amplasam continutul bannerului la mijlocul iamginii */
+.showcase .container .showcase-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding-top: 170px;
+}
+
+@media (max-width: 767.98px) {
+  .showcase .container .showcase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.showcase .container .showcase-content .lead {
+  font-size: 20px;
+  padding-bottom: 20px;
+  line-height: 1.2em;
+}
+
+.showcase .container .showcase-content .box {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+}
+
+.showcase .container .showcase-content .box .button {
+  display: flex;
+  font-size: 18px;
+  color: white;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+  .showcase .container .showcase-content .box .button {
+    display: none;
+  }
+}
+
+.showcase .container .showcase-content .box .button:hover {
+  color: orange;
+}
+
+/* Home-info */
+#home-info {
+  height: 400px;
+  background-color: #333;
+}
+
+/* pun imaginea de fundal pe jumatate din ecran */
+#home-info .info-img {
+  background-image: url("../img/photo-1.jpg");
+  float: left;
+  width: 50%;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+#home-info .info-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 100px;
+  color: #fff;
+}
+
+#home-info .info-content .text-primary {
+  color: orange;
+}
+
+#home-info .info-content .box .button {
+  color: #fff;
+}
+
+#home-info .info-content p {
+  padding-top: 20px;
+}
+
+#home-info .info-content .button:hover {
+  color: orange;
+}
+
+/* feautures section-vreau sa am 3 coloane egale cu cele trei feature-uri */
+#features .box {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+}
+
+@media (max-width: 767.98px) {
+  #features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+#features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+#features .bg-light {
+  background: white;
+  color: #333;
+}
+
+#features .bg-primary {
+  background: rgb(224, 46, 46);
+  color: orange;
+}
+
+/* Footer styling */
+#main-footer {
+  text-align: center;
+  background: rgb(31, 2, 2);
+  color: white;
+  padding: 20px;
+}
+
+
+#main-footer p {
+  text-align: center;
+}
+
+/* pentru a pune footer-ul pe centru */
+.clear {
+  clear: both;
+}
+
+/* Styling About Page */
+
+/* stilizarea imaginii catre dreapta  */
+#about-info .container {
+  display: flex;
+  background-color: rgba(181, 180, 179, 0.9);
+}
+
+@media (max-width: 767.98px) {
+  #about-info .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #about-info .container .info-left h1 {
+    padding-top: 12px;
+  }
+}
+
+#about-info .container .info-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .container .info-right img {
+  width: 70%;
+  border-radius: 50%;
+  margin: auto;
+  padding-top: 5px;
+}
+
+/* stilizarea textului catre stanga */
+#about-info .container .info-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-info .container .info-left p {
+  text-align: center;
+}
+
+#about-info .container .info-left .text-primary {
+  color: orange;
+}
+
+#about-info .container .info-left h1 {
+  font-size: 40px;
+}
+
+/* testimonials styling */
+#testimonials .testimonial img {
+  width: 150px;
+  padding-right: 10px;
+  border-radius: 50%;
+}
+
+#testimonials .testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+  opacity: 0.8;
+}
+
+#testimonials .testimonial p {
+  font-size: 20px;
+  color: white;
+}
+
+#testimonials .container {
+  background-image: url("../img/test-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+@media (max-width: 767.98px) {
+  #testimonials .container .testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+#testimonials .container .heading-testimonials {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  padding-top: 20px;
+}
+
+/* styling form */
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+#contact-form .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 767.98px) {
+  #contact-form .container .form-group input {
+    width: 50vh;
+  }
+  #contact-form .container .form-group textarea {
+    width: 50vh;
+  }
+}
+
+/* schimbarea culorii bordurii la fiecare input */
+
+#contact-form .container .form-group input:focus {
+  outline: none;
+  border-color: red;
+}
+
+#contact-form .container .form-group textarea:focus {
+  outline: none;
+  border-color: red;
+}
+
+/* contact info styling */
+#contact-info .container .box {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 767.98px) {
+  #contact-info .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+#contact-info .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #333;
+}
+
+.form .btn {
+  padding: 15px;
+  width: 20vh;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  background: #333;
+  color: white;
+  padding-left: 65px;
+}
+
+.form .btn:hover {
+  background-color: orange;
+  cursor: pointer;
+}

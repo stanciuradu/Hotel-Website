@@ -1,0 +1,71 @@
+<!-- cod pentru pagina de about -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <title>Hotel BT | About</title>
+  </head>
+  <body>
+    <header>
+      <!-- ca si good practice foloseste daor un id si restul clase -->
+      <nav id="navbar">
+        <h1 class="logo"><a href="index.html"></a>HBT</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- cod pentru o sectiune de pagina(sectiunea va avea un continut in partea stanga si unul in partea dreapta-separate in mod egal) -->
+    <section id="about-info">
+      <div class="container">
+        <div class="info-left">
+          <!-- in stanga am un continut de tip text -->
+          <h1><span class="text-primary">About</span> Hotel BT</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            maxime a consequatur sed architecto. 
+            Repellat, nam aliquid!
+            Architecto, necessitatibus unde.
+          </p>
+        </div>
+        <!-- in dreapta am o imagine -->
+        <div class="info-right">
+          <img src="./img/photo-2.jpg" alt="imagine" />
+        </div>
+      </div>
+    </section>
+    
+    <!-- sectiune pentru testimoniale -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="heading-testimonials">What Our Guest Say</h2>
+            <div class="testimonial">
+                <img src="./img/person-1.jpg" alt="imagine">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, iusto.</p>
+            </div>
+            <div class="testimonial">
+                <img src="./img/person-2.jpg" alt="imagine">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellat.</p>
+            </div>
+        </div>
+    </section> 
+    
+    
+    <div class="clear"></div>
+    <!-- footer(partea de subsol a site-ului web) -->
+    <div class="clear"></div>
+    <footer id="main-footer">
+      <p>Hotel BT &copy; 2022, All right Reserved</p>
+    </footer>
+  </body>
+</html>
