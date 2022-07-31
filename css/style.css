@@ -358,6 +358,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 20vh;
 }
 
 @media (min-width: 767.98px) {
@@ -417,7 +418,6 @@ p {
   margin-bottom: 20px;
   background: #333;
   color: white;
-  padding-left: 65px;
 }
 
 .form .btn:hover {
