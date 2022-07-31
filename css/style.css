@@ -367,6 +367,7 @@ p {
   }
   #contact-form .container .form-group textarea {
     width: 70vh;
+    padding: 10vh;
   }
 }
 
@@ -412,7 +413,6 @@ p {
 
 .form .btn {
   padding: 15px;
-  width: 20vh;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 20px;
